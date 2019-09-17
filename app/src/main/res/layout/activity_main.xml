@@ -74,7 +74,7 @@
         <LinearLayout
             android:id="@+id/middleOfGame"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="3"
             android:orientation="vertical">
 
@@ -86,19 +86,56 @@
                 android:text="STRATEGO X UP EDITION"
                 android:textSize="40sp" />
 
+            <!--
+            External Citation:
+            Person Commenting: John Haas
+
+            17 September 2019
+            Problem:    Wanted to get the Height of the Surface View to be equal
+                        to the width
+
+            Resource: https://stackoverflow.com/questions/9798392/imageview-have-
+                      height-match-width
+            Solution: used the code found in this resource except changed the bounds
+                      to 16:9
+            -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SurfaceView
+                    android:id="@+id/GameBoardSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="12:9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/rightThirdOfGame"
-            android:layout_width="wrap_content"
+            android:layout_width="250sp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <Space
+                android:id="@+id/topRightSpace"
+                android:layout_width="match_parent"
+                android:layout_height="45sp" />
+
             <LinearLayout
                 android:id="@+id/row1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/marshallButton"
@@ -106,18 +143,36 @@
                     android:layout_height="wrap_content"
                     android:text="1" />
 
+                <Space
+                    android:id="@+id/buttonSpace12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/generalButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2" />
+
+                <Space
+                    android:id="@+id/buttonSpace2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/row2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/colonelButton"
@@ -125,18 +180,35 @@
                     android:layout_height="wrap_content"
                     android:text="3" />
 
+                <Space
+                    android:id="@+id/buttonSpace34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/majorButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4" />
+
+                <Space
+                    android:id="@+id/buttonSpace4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/row3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/captainButton"
@@ -144,18 +216,36 @@
                     android:layout_height="wrap_content"
                     android:text="5" />
 
+                <Space
+                    android:id="@+id/buttonSpace56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/lieutenantButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6" />
+
+                <Space
+                    android:id="@+id/buttonSpace6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/row4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/sergeantButton"
@@ -163,18 +253,36 @@
                     android:layout_height="wrap_content"
                     android:text="7" />
 
+                <Space
+                    android:id="@+id/buttonSpace78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/minerButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="8" />
+
+                <Space
+                    android:id="@+id/buttonSpace8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/row5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/scoutButton"
@@ -182,18 +290,36 @@
                     android:layout_height="wrap_content"
                     android:text="9" />
 
+                <Space
+                    android:id="@+id/buttonSpace9S"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/spyButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="S" />
+
+                <Space
+                    android:id="@+id/buttonSpaceS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/row6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpaceBomb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/bombButton"
@@ -201,20 +327,37 @@
                     android:layout_height="wrap_content"
                     android:text="BOMB" />
 
+                <Space
+                    android:id="@+id/buttonSpaceBombFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/flagButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FLAG" />
 
+                <Space
+                    android:id="@+id/buttSpaceFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
             </LinearLayout>
+
+            <Space
+                android:id="@+id/middleRightSpace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
 
             <TextView
                 android:id="@+id/difficultyTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="150sp"
+                android:layout_gravity="bottom|center_horizontal"
                 android:fontFamily="casual"
                 android:gravity="center"
                 android:text="NORMAL \nMODE"
@@ -222,7 +365,7 @@
 
             <TextView
                 android:id="@+id/turnText"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
                 android:fontFamily="casual"
@@ -234,10 +377,11 @@
                 android:id="@+id/button14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
+                android:layout_gravity="bottom|center"
                 android:fontFamily="casual"
                 android:text="Menu"
                 android:textSize="30sp" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
