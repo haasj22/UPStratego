@@ -65,7 +65,7 @@
                         android:id="@+id/helpScreenText"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-black"
                         android:text="@string/helpScreen"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp" />
@@ -290,9 +290,15 @@
 
             <LinearLayout
                 android:id="@+id/row5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/scoutButton"
@@ -300,18 +306,35 @@
                     android:layout_height="wrap_content"
                     android:text="9" />
 
+                <Space
+                    android:id="@+id/buttonSpace9S"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/spyButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="S" />
+
+                <Space
+                    android:id="@+id/buttonSpaceS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/row6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/bombButton"
@@ -319,11 +342,21 @@
                     android:layout_height="wrap_content"
                     android:text="BOMB" />
 
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/flagButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FLAG" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
             </LinearLayout>
 
