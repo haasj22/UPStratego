@@ -30,6 +30,25 @@
                 android:text="NOTEPAD"
                 android:textSize="36sp" />
 
+            <TextView
+                android:id="@+id/enemyListTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/enemyList"
+                android:textSize="24sp" />
+
+            <!--
+                Person Commenting: John Haas
+
+                External Citation
+                    Date: 14 September 2019
+                    Problem: I did not know how to implement scrollable text
+
+                    Resource:
+                        https://developer.android.com/reference/android/widget/ScrollView
+                    Solution: Using a scrollView with a TextView Inside like the documentation says
+            -->
             <ScrollView
                 android:id="@+id/helpScreenScrollView"
                 android:layout_width="match_parent"
@@ -89,6 +108,32 @@
                 android:textColor="#F3FFFFFF"
                 android:textSize="40sp" />
 
+            <!--
+            External Citation:
+            Person Commenting: John Haas
+
+            17 September 2019
+            Problem:    Wanted to get the Height of the Surface View to be equal
+                        to the width
+
+            Resource: https://stackoverflow.com/questions/9798392/imageview-have-
+                      height-match-width
+            Solution: used the code found in this resource except changed the bounds
+                      to 16:9
+            -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SurfaceView
+                    android:id="@+id/GameBoardSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="12:9" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -97,20 +142,59 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="wrap_content"
+            <Space
+                android:id="@+id/topRightSpace"
+                android:layout_width="match_parent"
+                android:layout_height="45sp" />
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:fontFamily="casual"
-                android:text="Menu"
-                android:textSize="30sp" />
+                android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/marshallButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <Space
+                    android:id="@+id/buttonSpace12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/generalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+
+                <Space
+                    android:id="@+id/buttonSpace2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/row2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/colonelButton"
@@ -118,11 +202,23 @@
                     android:layout_height="wrap_content"
                     android:text="3" />
 
+                <Space
+                    android:id="@+id/buttonSpace34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/majorButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="4" />
+
+                <Space
+                    android:id="@+id/buttonSpace4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -131,17 +227,35 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
+                <Space
+                    android:id="@+id/buttonSpace5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/captainButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5" />
 
+                <Space
+                    android:id="@+id/buttonSpace56"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/lieutenantButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6" />
+
+                <Space
+                    android:id="@+id/buttonSpace6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -149,6 +263,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
+                <Space
+                    android:id="@+id/buttonSpace7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/sergeantButton"
@@ -202,24 +322,16 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/row1"
+            <TextView
+                android:id="@+id/difficultyTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/marshallButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1" />
-
-                <Button
-                    android:id="@+id/generalButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2" />
-            </LinearLayout>
+                android:layout_gravity="bottom"
+                android:layout_marginTop="150sp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="NORMAL \nMODE"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/turnText"
@@ -232,16 +344,13 @@
                 android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
-            <TextView
-                android:id="@+id/difficultyTextView"
+            <Button
+                android:id="@+id/button14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:layout_marginTop="150sp"
                 android:fontFamily="casual"
-                android:gravity="center"
-                android:text="NORMAL \nMODE"
-                android:textColor="#FFFFFF"
+                android:text="Menu"
                 android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
