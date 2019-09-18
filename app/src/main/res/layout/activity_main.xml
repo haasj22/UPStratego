@@ -82,13 +82,6 @@
                         https://developer.android.com/reference/android/widget/ScrollView
                     Solution: Using a scrollView with a TextView Inside like the documentation says
             -->
-            <TextView
-                android:id="@+id/enemyListTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
-                android:text="@string/enemyList"
-                android:textSize="24sp" />
 
         </LinearLayout>
 
@@ -138,7 +131,7 @@
 
         <LinearLayout
             android:id="@+id/rightThirdOfGame"
-            android:layout_width="wrap_content"
+            android:layout_width="250sp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -155,7 +148,6 @@
 
                 <Space
                     android:id="@+id/buttonSpace1"
-                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1" />
 
@@ -163,7 +155,7 @@
                     android:id="@+id/marshallButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1" />
+                    tools:text="1" />
 
                 <Space
                     android:id="@+id/buttonSpace12"
@@ -223,7 +215,7 @@
 
             <LinearLayout
                 android:id="@+id/row3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -260,7 +252,7 @@
 
             <LinearLayout
                 android:id="@+id/row4"
-                android:layout_width="wrap_content"
+                android:layout_width="250sp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
@@ -276,11 +268,23 @@
                     android:layout_height="wrap_content"
                     android:text="7" />
 
+                <Space
+                    android:id="@+id/buttonSpace78"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
                 <Button
                     android:id="@+id/minerButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="8" />
+
+                <Space
+                    android:id="@+id/buttonSpace8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
