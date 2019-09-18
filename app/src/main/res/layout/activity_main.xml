@@ -10,6 +10,7 @@
         android:id="@+id/gameOverlord"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#200200"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -29,25 +30,6 @@
                 android:text="NOTEPAD"
                 android:textSize="36sp" />
 
-            <TextView
-                android:id="@+id/enemyListTextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
-                android:text="@string/enemyList"
-                android:textSize="24sp" />
-
-            <!--
-                Person Commenting: John Haas
-
-                External Citation
-                    Date: 14 September 2019
-                    Problem: I did not know how to implement scrollable text
-
-                    Resource:
-                        https://developer.android.com/reference/android/widget/ScrollView
-                    Solution: Using a scrollView with a TextView Inside like the documentation says
-            -->
             <ScrollView
                 android:id="@+id/helpScreenScrollView"
                 android:layout_width="match_parent"
@@ -65,9 +47,29 @@
                         android:layout_height="match_parent"
                         android:fontFamily="casual"
                         android:text="@string/helpScreen"
+                        android:textColor="#FFFFFF"
                         android:textSize="18sp" />
                 </LinearLayout>
             </ScrollView>
+
+            <!--
+                Person Commenting: John Haas
+
+                External Citation
+                    Date: 14 September 2019
+                    Problem: I did not know how to implement scrollable text
+
+                    Resource:
+                        https://developer.android.com/reference/android/widget/ScrollView
+                    Solution: Using a scrollView with a TextView Inside like the documentation says
+            -->
+            <TextView
+                android:id="@+id/enemyListTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/enemyList"
+                android:textSize="24sp" />
 
         </LinearLayout>
 
@@ -84,6 +86,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="STRATEGO X UP EDITION"
+                android:textColor="#F3FFFFFF"
                 android:textSize="40sp" />
 
         </LinearLayout>
@@ -94,24 +97,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/row1"
+            <Button
+                android:id="@+id/button14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/marshallButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1" />
-
-                <Button
-                    android:id="@+id/generalButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2" />
-            </LinearLayout>
+                android:layout_gravity="bottom"
+                android:fontFamily="casual"
+                android:text="Menu"
+                android:textSize="30sp" />
 
             <LinearLayout
                 android:id="@+id/row2"
@@ -209,16 +202,24 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/difficultyTextView"
+            <LinearLayout
+                android:id="@+id/row1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="150sp"
-                android:fontFamily="casual"
-                android:gravity="center"
-                android:text="NORMAL \nMODE"
-                android:textSize="30sp" />
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/marshallButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/generalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/turnText"
@@ -228,15 +229,19 @@
                 android:fontFamily="casual"
                 android:gravity="center"
                 android:text="RED'S TURN"
+                android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
-            <Button
-                android:id="@+id/button14"
+            <TextView
+                android:id="@+id/difficultyTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
+                android:layout_marginTop="150sp"
                 android:fontFamily="casual"
-                android:text="Menu"
+                android:gravity="center"
+                android:text="NORMAL \nMODE"
+                android:textColor="#FFFFFF"
                 android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
