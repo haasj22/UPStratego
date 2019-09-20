@@ -16,14 +16,14 @@
         <b> Enemy List </b> \n
         1 x Marshall\n
         1 x General\n
-        2 x Colonel\n
-        3 x Major\n
-        4 x Captain\n
-        4 x Lieutenant\n
-        4 x Sergeant\n
-        5 x Miner\n
-        8 x Scout\n
-        1 x Spy\n
+        1 x Colonel\n
+        2 x Major\n
+        1 x Captain\n
+        2 x Lieutenant\n
+        3 x Sergeant\n
+        4 x Miner\n
+        4 x Scout\n
+        0 x Spy\n
         6 x Bomb\n
         1 x Flag
     </string>
