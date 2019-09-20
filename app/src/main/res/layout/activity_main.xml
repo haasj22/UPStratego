@@ -128,6 +128,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <!--
+                    External Citation
+                    Problem: Did not have image for final project
+
+                    Resource: https://www.myabandonware.com/game/stratego-10u
+                    Solution: We used the image from this webpage
+                -->
                 <ImageView
                     android:id="@+id/boardImageView"
                     android:layout_width="match_parent"
