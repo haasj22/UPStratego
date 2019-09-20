@@ -125,12 +125,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <SurfaceView
+                <!--<SurfaceView
                     android:id="@+id/GameBoardSurfaceView"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintDimensionRatio="12:9" />
+                    app:layout_constraintDimensionRatio="12:9"
+                    />-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="12:9"
+                    android:id="@+id/boardImageView"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -192,10 +199,10 @@
                     android:layout_width="0dp" />
 
                 <Button
-                    android:id="@+id/marshallButton"
+                    android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="1" />
+                    android:text="1" />
 
                 <Space
                     android:id="@+id/buttonSpace12"
