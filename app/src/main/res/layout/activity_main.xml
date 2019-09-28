@@ -206,7 +206,8 @@
                     android:id="@+id/marshallButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1" />
+                    android:text="1"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace12"
@@ -218,7 +219,8 @@
                     android:id="@+id/generalButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2" />
+                    android:text="2"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace2"
@@ -243,7 +245,8 @@
                     android:id="@+id/colonelButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3" />
+                    android:text="3"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace34"
@@ -255,7 +258,8 @@
                     android:id="@+id/majorButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4" />
+                    android:text="4"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace4"
@@ -280,7 +284,8 @@
                     android:id="@+id/captainButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5" />
+                    android:text="5"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace56"
@@ -292,7 +297,8 @@
                     android:id="@+id/lieutenantButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6" />
+                    android:text="6"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace6"
@@ -317,7 +323,8 @@
                     android:id="@+id/sergeantButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="7" />
+                    android:text="7"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace78"
@@ -329,7 +336,8 @@
                     android:id="@+id/minerButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8" />
+                    android:text="8"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace8"
@@ -354,7 +362,8 @@
                     android:id="@+id/scoutButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9" />
+                    android:text="9"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpace9S"
@@ -366,7 +375,8 @@
                     android:id="@+id/spyButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="S" />
+                    android:text="S"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpaceS"
@@ -391,7 +401,8 @@
                     android:id="@+id/bombButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="BOMB" />
+                    android:text="BOMB"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpaceBombFlag"
@@ -403,7 +414,8 @@
                     android:id="@+id/flagButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="FLAG" />
+                    android:text="FLAG"
+                    android:textSize="24sp" />
 
                 <Space
                     android:id="@+id/buttonSpaceFlag"
@@ -432,7 +444,7 @@
                 android:layout_gravity="bottom|center"
                 android:fontFamily="casual"
                 android:gravity="center"
-                android:text="BLUE'S TURN"
+                android:text="RED'S TURN"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 

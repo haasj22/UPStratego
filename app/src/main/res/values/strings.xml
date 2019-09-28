@@ -15,25 +15,25 @@
     <string name="enemyList">
         <b> Enemy List </b> \n
         1 x Marshall\n
-        1 x General\n
+        0 x General\n
         1 x Colonel\n
-        2 x Major\n
-        1 x Captain\n
-        2 x Lieutenant\n
-        3 x Sergeant\n
-        4 x Miner\n
-        4 x Scout\n
+        1 x Major\n
+        0 x Captain\n
+        1 x Lieutenant\n
+        1 x Sergeant\n
+        0 x Miner\n
+        1 x Scout\n
         0 x Spy\n
-        6 x Bomb\n
+        2 x Bomb\n
         1 x Flag
     </string>
 
     <string name="helpScreen">
         <b> Help Screen</b> \n
-        Miner\n
-        Has the ability to diffuse bombs.
-        Unfortunately, He is not
-        very strong in combat.
+        Marshall\n
+        Strongest of the strong\n
+        Only piece able to\n
+        kill him is the spy.
     </string>
 </resources>
 
