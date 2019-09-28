@@ -28,6 +28,22 @@
         1 x Flag
     </string>
 
+    <string name="placePieces">
+        <b> Pieces Left\n to Place</b>\n
+        0 x Marshall\n
+        0 x General\n
+        1 x Colonel\n
+        1 x Major\n
+        4 x Captain\n
+        3 x Lieutenant\n
+        3 x Sergeant\n
+        2 x Miner\n
+        4 x Scout\n
+        1 x Spy\n
+        1 x Bomb\n
+        0 x Flag
+    </string>
+
     <string name="helpScreen">
         <b> Help Screen</b> \n
         Miner\n
